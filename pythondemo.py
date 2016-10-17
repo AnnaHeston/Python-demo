@@ -68,8 +68,9 @@ def win(nice,mean,name):
     again(nice,mean,name)
 
 def lose(nice,mean,name):
-    print("\nToo bad, game over! \n{}You live in a van by the river, wretched and alone.".format(name))
-
+    print("\nToo bad, game over! \n{}, You live in a van by the river, wretched and alone.".format(name))
+    again(nice,mean,name)
+    
 def again(nice,mean,name):
     stop = True
     while stop:
